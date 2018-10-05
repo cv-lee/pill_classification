@@ -8,8 +8,9 @@
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
-3. "Shape" Train (Basic resnet18 + Simple Augmentation)
-
+3. "Shape" Train 
+      => Model: Baisc ResNet18
+      => Data Augmentation: Vertical,Horizontal Flip / Tilt / Scaling / Shear
       => Acc: 
 
 ## TODO
