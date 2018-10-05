@@ -3,6 +3,9 @@
 ## DONE
 
 1. Data Acquiration
+
+      http://drug.mfds.go.kr/html/index.jsp#
+
 <br>
 
 2. Data preprocess (except Pill Mask)
