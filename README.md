@@ -33,11 +33,12 @@
 
 ## TODO
 
-### 1. Test.py
-
-### 2. Multi-Instance, Multi-Label Learning
-
-### 3. Pill Mask 
+### 1. Pill Mask 
       - Reference Paper: 
       1. Real-world Pill Segmentation based on Superpixel Merge using Region Adjacency Graph
          (Link: http://www.scitepress.org/Papers/2017/61358/61358.pdf)
+
+
+### 2. Multi-Instance, Multi-Label Learning
+
+### 3. Test.py (Testset+test)
