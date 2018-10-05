@@ -6,6 +6,8 @@
 
 2. Data preprocess (except Pill Mask)
 
+3. Deep Neural Network Train Frame-work (with Pytorch)
+
 3. "Shape" Train (with resnet18)
 
 
