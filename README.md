@@ -1,13 +1,20 @@
 # Pill Classification
 
+## DONE
+
+1. Data Acquiration
+
+2. Data preprocess (except Pill Mask)
+
+3. "Shape" Train (with resnet18)
+
+
 ## TODO
 
-###1. Testloader
+1. Testset / Test.py
 
-###2. color1, color2 Train
+2. "Color1", "Color2" Train
 
-###3. Multi-Instance, Multi-Label Learning
+3. Multi-Instance, Multi-Label Learning
 
-###4.
-
-###5.
+4. Pill Mask 
