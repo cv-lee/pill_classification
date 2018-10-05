@@ -3,26 +3,33 @@
 ## DONE
 
 1. Data Acquiration
+<br>
 
 2. Data preprocess (except Pill Mask)
+<br>
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
       => Model: Baisc ResNet18
       
       => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
-     
+<br>
+
 4. "Shape" Train ('Shape' has 11types)
 
       => Validation Acc: 87% (2 epoch train)
-      
+<br>
+
 5. "Color1" Train ('Color' has 16types)
 
       => Validation Acc: 
+<br>
 
 6. "Color1" Train ('Color' has 16types)
 
       => Validation Acc: 
+<br>
+<br>
 
 ## TODO
 
