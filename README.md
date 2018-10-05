@@ -8,8 +8,9 @@
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
-3. "Shape" Train (with resnet18)
+3. "Shape" Train (Basic resnet18 + Simple Augmentation)
 
+-> Acc: 
 
 ## TODO
 
