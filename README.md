@@ -10,9 +10,9 @@
 
 3. "Shape" Train 
       
-      => Model: Baisc ResNet18
+      => Model:               Baisc ResNet18
       
-      => Data Augmentation: Vertical,Horizontal Flip / Tilt / Scaling / Shear
+      => Data Augmentation:   Vertical,Horizontal Flip / Tilt / Scaling / Shear
       
       => Acc: 
 
