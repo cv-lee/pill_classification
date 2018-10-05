@@ -8,28 +8,20 @@
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
-4. "Shape" Train ('Shape' has 11types)
-      
       => Model: Baisc ResNet18
       
       => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
-      
+     
+4. "Shape" Train ('Shape' has 11types)
+
       => Validation Acc: 87% (2 epoch train)
       
 5. "Color1" Train ('Color' has 16types)
 
-      => Model: Baisc ResNet18
-      
-      => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
-      
       => Validation Acc: 
 
 6. "Color1" Train ('Color' has 16types)
 
-      => Model: Baisc ResNet18
-      
-      => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
-      
       => Validation Acc: 
 
 ## TODO
