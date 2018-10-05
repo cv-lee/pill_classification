@@ -24,7 +24,7 @@
 
 ### 5. Front Color(16types) Train 
 
-      - Validation Acc: 78% (2 epoch train)
+      - Validation Acc: 80% (4 epoch train)
 
 ### 6. Back Color(16types) Train 
 
