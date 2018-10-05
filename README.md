@@ -8,20 +8,34 @@
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
-3. "Shape" Train ('Shape' has 11types)
+4. "Shape" Train ('Shape' has 11types)
       
       => Model: Baisc ResNet18
       
       => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
       
       => Validation Acc: 87% (2 epoch train)
+      
+5. "Color1" Train ('Color' has 16types)
+
+      => Model: Baisc ResNet18
+      
+      => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
+      
+      => Validation Acc: 
+
+6. "Color1" Train ('Color' has 16types)
+
+      => Model: Baisc ResNet18
+      
+      => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
+      
+      => Validation Acc: 
 
 ## TODO
 
 1. Testset / Test.py
 
-2. "Color1", "Color2" Train ('Color' has 16types)
+2. Multi-Instance, Multi-Label Learning
 
-3. Multi-Instance, Multi-Label Learning
-
-4. Pill Mask 
+3. Pill Mask 
