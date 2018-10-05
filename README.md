@@ -4,13 +4,13 @@
 
 ### 1. Data Acquiration
 
-      link: http://drug.mfds.go.kr/html/index.jsp#
+      Link: http://drug.mfds.go.kr/html/index.jsp#
 
 ### 2. Data preprocess (except Pill Mask)
 
       Image Crop/Resizing ( Final Image Size: 1024 × 512 × 3 )
 
-      Label naming
+      Label Naming
 
 ### 3. Deep Neural Network Train Frame-work (with Pytorch)
 
@@ -35,6 +35,7 @@
 
 ### 1. Pill Mask 
       Reference Paper: 
+      
       1. Real-world Pill Segmentation based on Superpixel Merge using Region Adjacency Graph
          (Link: http://www.scitepress.org/Papers/2017/61358/61358.pdf)
 
