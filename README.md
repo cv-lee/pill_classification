@@ -9,13 +9,18 @@
 <br>
 
 2. Data preprocess (except Pill Mask)
+
+      Image Crop/Resizing ( Final Image Size: 1024 × 512 × 3 )
+
+      Label naming
+
 <br>
 
 3. Deep Neural Network Train Frame-work (with Pytorch)
 
       => Model: Baisc ResNet18
       
-      => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
+      => Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
 <br>
 
 4. Shape(11types) Train 
