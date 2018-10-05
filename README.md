@@ -18,15 +18,15 @@
       
       - Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
 
-### 4. Shape(11types) Train 
+### 4. Shape (11 Types) Train 
 
       - Validation Acc: 87% (2 epoch train)
 
-### 5. Front Color(16types) Train 
+### 5. Front Color (16 Types) Train 
 
       - Validation Acc: 80% (4 epoch train)
 
-### 6. Back Color(16types) Train 
+### 6. Back Color (16 Types) Train 
 
       - Validation Acc: 
 <br>
