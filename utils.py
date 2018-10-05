@@ -146,4 +146,25 @@ def format_time(seconds):
     return f
 
 
-#pill_mask(IMG_ROOT, MASK_ROOT)
+class Checkpoint:
+    def __init__(self, model, optimizer=None, epoch=0, best_loss=9999):
+        self.model = model
+        self.optimizer = optimizer
+        self.epoch = epoch
+        self.best_loss = best_loss
+
+    def load(self, path):
+        checkpoint = torch.load(path)
+        self.model.load_state_dict(checkpoint["model_state"])
+        self.epoch = checkpoint["epoch"]
+        self.best_loss = checkpoint["best_loss"]
+        if self.optimizer:
+            self.optimizer.load_state_dict(checkpoint["optimizer_state"])
+
+    def save(self, path):
+        state_dict = self.model.module.state_dict()
+        torch.save({"model_state": state_dict,
+                    "optimizer_state": self.optimizer.state_dict(),
+                    "epoch": self.epoch,
+                    "best_loss": self.best_loss}, path)
+
