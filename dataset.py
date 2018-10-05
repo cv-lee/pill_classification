@@ -14,7 +14,7 @@ from config import *
 def data_loader(args, mode='TRAIN'):
     if mode == 'TRAIN':
         shuffle = True
-    elif mode == 'TEST':
+    elif mode =='VALID':
         shuffle = False
     else:
         raise ValueError('data_loader flag ERROR')
@@ -31,6 +31,7 @@ def data_loader(args, mode='TRAIN'):
 class Dataset(torch.utils.data.Dataset):
     def __init__(self, args, mode):
         self.mode = mode
+        self.data = args.data
         self.img_root = args.img_root
         self.img_path = []
         self.label_path = args.label_path
@@ -64,10 +65,11 @@ class Dataset(torch.utils.data.Dataset):
         img = Image.open(self.img_path[idx])
         if self.mode == 'TRAIN':
             img = self.transform(img)
-            shape = self.shape_list[idx]
-            color1 = self.color1_list[idx]
-            color2 = self.color2_list[idx]
-            return img, shape, color1, color2, self.img_path[idx]
+        if self.data == 'shape':
+            label = self.shape_list[idx]
+        elif self.data == 'color1':
+            label = self.color1_list[idx]
         else:
-            return img, self.img_path[idx]
+            label = self.color2_list[idx]
+        return img, label, self.img_path[idx]
 
