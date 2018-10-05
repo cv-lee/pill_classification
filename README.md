@@ -4,7 +4,7 @@
 
 1. Data Acquiration
 
-      http://drug.mfds.go.kr/html/index.jsp#
+      - link: http://drug.mfds.go.kr/html/index.jsp#
 
 <br>
 
