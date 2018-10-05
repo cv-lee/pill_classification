@@ -14,7 +14,7 @@
       
       => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
       
-      => Acc: 88%
+      => Validation Acc: 88% (2 epoch train)
 
 ## TODO
 
