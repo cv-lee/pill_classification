@@ -1,3 +1,4 @@
+import torch
 import cv2
 import sys
 import time
