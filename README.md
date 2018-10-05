@@ -15,17 +15,17 @@
       => Data Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
 <br>
 
-4. Shape Train ('Shape' has 11types)
+4. Shape(11types) Train 
 
       => Validation Acc: 87% (2 epoch train)
 <br>
 
-5. Front Color Train ('Front Color' has 16types)
+5. Front Color(16types) Train 
 
       => Validation Acc: 
 <br>
 
-6. Back Color Train ('Back Color' has 16types)
+6. Back Color(16types) Train 
 
       => Validation Acc: 
 <br>
