@@ -28,7 +28,7 @@
 
 ### 6. Back Color (16 Types) Train 
 
-      Validation Acc: 
+      Validation Acc: 79% (4 epoch train)
 <br>
 
 ## TODO
