@@ -10,7 +10,7 @@
 
 3. "Shape" Train (Basic resnet18 + Simple Augmentation)
 
-    -> Acc: 
+      => Acc: 
 
 ## TODO
 
