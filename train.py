@@ -54,7 +54,7 @@ def train(args):
 
         loss /= (idx+1)
         if loss < best_loss:
-            checkpoint = Checkpoint(unet, optimizer, epoch, score)
+            checkpoint = Checkpoint(resnet, optimizer, epoch, score)
             checkpoint.save(args.ckpt_path)
             best_loss = loss
             print("Saving...")
