@@ -4,8 +4,8 @@ import urllib
 import pdb
 
 
-LABEL_PATH = './data/label/label.xls'
-IMAGE_ROOT = './data/image'
+LABEL_PATH = './label/label.xls'
+IMAGE_ROOT = './image'
 
 def download(data_path, output_root):
     xls = pd.read_excel(data_path)
