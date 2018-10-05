@@ -39,5 +39,5 @@
 
 ### 3. Pill Mask 
       - Reference Paper: 
-      [Real-world Pill Segmentation based on Superpixel Merge using Region Adjacency Graph]
-            (http://www.scitepress.org/Papers/2017/61358/61358.pdf)
+      Real-world Pill Segmentation based on Superpixel Merge using Region Adjacency Graph
+      link: http://www.scitepress.org/Papers/2017/61358/61358.pdf
