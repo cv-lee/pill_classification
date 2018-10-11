@@ -31,7 +31,7 @@
       Validation Acc: 79% (4 epoch train)
 <br>
 
-## TODO
+## TODO 
 
 ### 1. Pill Mask 
       Reference Paper: 
