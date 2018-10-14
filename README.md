@@ -20,12 +20,14 @@
 
 ### 4. Train 
 
-![](https://i.imgur.com/7IVs7jC.png)
+
+
+#### 4-1) 1 instance → 1 label
+
+![](https://i.imgur.com/6KyEG5O.png)
 
 <br>
 
-#### 4-1) 1 instance → 1 label
-      
       Shape (11 Types) 
       Validation Acc: 87% (2 epoch train)
 
@@ -36,7 +38,11 @@
       Validation Acc: 79% (4 epoch train)
       
 #### 4-2) 1 instance → 3 label (Multi-Label Learning)
-      
+
+https://i.imgur.com/Snr6f1p.png
+
+<br>
+
       (5 epoch train)
       
       Shape (11 Types) 
