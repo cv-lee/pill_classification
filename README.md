@@ -43,7 +43,7 @@
 
 <br>
 
-      (15 epoch train)
+      (60 epoch train)
       
       Shape (11 Types) 
       Validation Acc: 91.49% 
