@@ -18,17 +18,31 @@
       
       Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
 
-### 4. Shape (11 Types) Train 
+### 4. Train 
 
+#### 4-1) 1 instance → 1 label
+      
+      Shape (11 Types) 
       Validation Acc: 87% (2 epoch train)
 
-### 5. Front Color (16 Types) Train 
-
+      Front Color (16 Types) 
       Validation Acc: 80% (4 epoch train)
 
-### 6. Back Color (16 Types) Train 
-
+      Back Color (16 Types)
       Validation Acc: 79% (4 epoch train)
+      
+#### 4-2) 1 instance → 3 label (Multi-Label Learning)
+      
+      (3 epoch train)
+      
+      Shape (11 Types) 
+      Validation Acc: 76% 
+
+      Front Color (16 Types) 
+      Validation Acc: 86% 
+
+      Back Color (16 Types)
+      Validation Acc: 85%
 <br>
 
 ## TODO 
