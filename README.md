@@ -20,6 +20,10 @@
 
 ### 4. Train 
 
+![](https://i.imgur.com/7IVs7jC.png)
+
+<br>
+
 #### 4-1) 1 instance → 1 label
       
       Shape (11 Types) 
@@ -56,10 +60,5 @@
          (Link: http://www.scitepress.org/Papers/2017/61358/61358.pdf)
 
 
-### 2. Multi-Instance, Multi-Label Learning
-
-![](https://i.imgur.com/7IVs7jC.png)
-
-<br>
 
 ### 3. Test.py (Testset+test)
