@@ -39,7 +39,7 @@
       
 #### 4-2) 1 instance → 3 label (Multi-Label Learning)
 
-![](https://i.imgur.com/Snr6f1p.png)
+![](https://i.imgur.com/D9EF3iC.png)
 
 <br>
 
