@@ -46,15 +46,15 @@
       (60 epoch train)
       
       Shape (11 Types) 
-      Validation Acc: 91.49% 
+      Validation Acc: 91.55% 
 
       Front Color (16 Types) 
-      Validation Acc: 91.00% 
+      Validation Acc: 91.70% 
 
       Back Color (16 Types)
-      Validation Acc: 90.67%
+      Validation Acc: 90.97%
 
-      → Total Acc: 75.48% 
+      → Total Acc: 76.37% 
 <br>
 
 ## TODO 
