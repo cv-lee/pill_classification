@@ -43,6 +43,8 @@
 
       Back Color (16 Types)
       Validation Acc: 88%
+
+      → Total Acc: 66%   (0.87 × 0.87 × 0.88)
 <br>
 
 ## TODO 
