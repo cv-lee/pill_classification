@@ -33,16 +33,16 @@
       
 #### 4-2) 1 instance → 3 label (Multi-Label Learning)
       
-      (3 epoch train)
+      (5 epoch train)
       
       Shape (11 Types) 
-      Validation Acc: 80% 
+      Validation Acc: 87% 
 
       Front Color (16 Types) 
-      Validation Acc: 86% 
+      Validation Acc: 87% 
 
       Back Color (16 Types)
-      Validation Acc: 87%
+      Validation Acc: 88%
 <br>
 
 ## TODO 
