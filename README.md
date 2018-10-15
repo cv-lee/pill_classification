@@ -27,6 +27,7 @@
 ![](https://i.imgur.com/yfpsIY4.png)
 
 <br>
+
       (50 epoch train)
       
       - Shape (11 Types)
