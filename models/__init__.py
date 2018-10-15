@@ -13,9 +13,11 @@ def load_model(args, mode):
         class_num = 11
     elif args.data == 'color1' or args.data == 'color2':
         class_num = 16
+    elif args.data == 'all':
+        class_num = (11,16,16)
     else:
         raise ValueError('args.data ERROR')
-    model = resnet18(num_classes=class_num)
+    model = resnet18(num_classes=class_num, drop_rate=args.drop_rate)
     if mode == 'TRAIN':
         optimizer = Adam(model.parameters(), lr=args.lr)
     elif mode == 'TEST':
