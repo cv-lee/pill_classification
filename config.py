@@ -1,3 +1,12 @@
+# Print Formatting
+multi_print_format ='shape loss: %.4f, color1 loss: %.4f, color2 loss: %.4f, total loss: %.4f, shape acc: %.4f, color1 acc: %.4f, color2 acc: %.4f, total acc: %.4f'
+
+# Multi-label Model Loss Weights
+shape_loss_weight = 1.0
+color1_loss_weight = 1.0
+color2_loss_weight = 1.0
+
+
 # SHAPE INIT
 s0= '삼각형'
 s1 = '사각형'
@@ -10,6 +19,7 @@ s7 = '타원형'
 s8 = '장방형'
 s9 = '마름모형'
 s10 = '기타'
+
 
 # COLOR INIT
 c0 = '빨강'
