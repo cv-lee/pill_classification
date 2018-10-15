@@ -64,7 +64,6 @@
 
 ### 5. Uncertainty Model
 
-<br>
 
       - Model: Resnet18
       
