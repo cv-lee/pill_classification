@@ -69,7 +69,9 @@ class Dataset(torch.utils.data.Dataset):
             label = self.shape_list[idx]
         elif self.data == 'color1':
             label = self.color1_list[idx]
-        else:
+        elif self.data == 'color2':
             label = self.color2_list[idx]
+        else:
+            label = self.shape_list[idx], self.color1_list[idx], self.color2_list[idx]
         return img, label, self.img_path[idx]
 
