@@ -26,13 +26,22 @@ last_time = time.time()
 begin_time = last_time
 
 
+
+def get_loss(pred, target):
+    if type(label) == type(tuple):
+        shape_loss = F.cross_entropy(pred[0], target)
+        color1_loss = F.cross_entropy(pred[1], target)
+        color2_loss = F.cross_entropy(pred[2], target)
+        return shape_loss, color1_loss, color2_loss
+    else:
+        return F.cross_entropy(pred, target)
+
 def pill_mask(img_root, mask_root):
     ''' Mask Pill Mask
 
         -Reference Paper-
         http://www.scitepress.org/Papers/2017/61358/61358.pdf
     '''
-
 
     img_list = os.listdir(img_root)
     img_list = sorted(img_list, key=lambda x: int(os.path.splitext(x)[0]))
