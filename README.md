@@ -29,13 +29,13 @@
 <br>
 
       Shape (11 Types) 
-      Validation Acc: 91.87% (30 epoch train)
+      Validation Acc: 91.87% (50 epoch train)
 
       Front Color (16 Types) 
-      Validation Acc: 89.08% (30 epoch train)
+      Validation Acc: 90.23% (50 epoch train)
 
       Back Color (16 Types)
-      Validation Acc: 90.92% (30 epoch train)
+      Validation Acc: 91.08% (50 epoch train)
       
 #### 4-2) 1 instance → 3 label (Multi-Label Learning)
 
