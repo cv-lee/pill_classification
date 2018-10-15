@@ -7,7 +7,7 @@ import cv2
 LABEL_PATH = './label/label.xls'
 IMAGE_ROOT = './image'
 
-def crawling(label_path, output_root):
+def download(label_path, output_root):
     ''' Download images based on image link
     '''
     xls = pd.read_excel(label_path)
@@ -44,6 +44,6 @@ def sizeCheck(img_root):
             size_list.append(img.shape)
     print(set(size_list))
 
-#crawling(LABEL_PATH, IMAGE_ROOT)
+#download(LABEL_PATH, IMAGE_ROOT)
 #imgCrop(IMAGE_ROOT)
 #sizeCheck(IMAGE_ROOT)
