@@ -71,11 +71,11 @@
       
       - Target: Shape (1 instance - 1 label Model)
       
-      - Aleatoric Uncertainty: 0.0052
+      - Aleatoric Uncertainty: 0.0085
       
       - Epistemic Uncertainty: 0.0001
 
-      - Acc: 86% (8 epoch Train)
+      - Acc: 86.63% (8 epoch Train)
       
 <br>
 
