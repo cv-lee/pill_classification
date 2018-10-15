@@ -76,7 +76,7 @@
       
       - Epistemic Uncertainty: 0.0001
 
-      - Acc: 86% (8 epoch Trian)
+      - Acc: 86% (8 epoch Train)
       
 <br>
 
