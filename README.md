@@ -70,10 +70,14 @@
       
       - Drop-out rate: 0.25
       
+      - Target: Shape (1 instance - 1 label Model)
+      
       - Aleatoric Uncertainty: 0.0052
       
       - Epistemic Uncertainty: 0.0001
 
+      - Acc: 86% (8 epoch Trian)
+      
 <br>
 
 ## TODO 
