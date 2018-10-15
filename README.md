@@ -18,7 +18,7 @@
       
       Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
 
-### 4. Train 
+### 4. Classifier
 
 
 
@@ -62,6 +62,19 @@
       → Total Acc: 76.37% 
 <br>
 
+### 5. Uncertainty Model
+
+<br>
+
+      - Model: Resnet18
+      
+      - Drop-out rate: 0.25
+      
+      - Aleatoric Uncertainty: 0.0052
+      
+      - Epistemic Uncertainty: 0.0001
+
+<br>
 ## TODO 
 
 ### 1. Pill Mask 
