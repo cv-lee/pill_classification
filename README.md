@@ -27,14 +27,15 @@
 ![](https://i.imgur.com/yfpsIY4.png)
 
 <br>
-
-      - Shape (11 Types) / (50 epoch train)
+      (50 epoch train)
+      
+      - Shape (11 Types)
       Validation Acc: 91.87%
 
-      - Front Color (16 Types) / (50 epoch train)
+      - Front Color (16 Types)
       Validation Acc: 90.23%
 
-      - Back Color (16 Types) / (50 epoch train)
+      - Back Color (16 Types)
       Validation Acc: 91.08%
    
       → Total Acc: 75.50% 
