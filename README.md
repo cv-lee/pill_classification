@@ -65,33 +65,63 @@
 
 #### 5-1) 1 instance → 1 label
 
-      - Target: Shape
+      1. Shape
       
-      - Model: Resnet18
+      Model: Resnet18
       
-      - Drop-out rate: 0.25
+      Drop-out rate: 0.25
       
-      - Aleatoric Uncertainty: 0.0085
+      Aleatoric Uncertainty: 0.0085
       
-      - Epistemic Uncertainty: 0.0001
+      Epistemic Uncertainty: 0.0001
 
-      - Acc: 86.63% (8 epoch Train)
+      Validation Acc: 86.63% (8 epoch Train)
       
+      2. Color1
       
+      Model: Resnet18
+      
+      Drop-out rate: 0.25
+      
+      Aleatoric Uncertainty: -
+      
+      Epistemic Uncertainty: -
+
+      Validation Acc: -
+      
+      3. Color2
+      
+      Model: Resnet18
+      
+      Drop-out rate: 0.25
+      
+      Aleatoric Uncertainty: -
+      
+      Epistemic Uncertainty: -
+
+      Validation Acc: -
+      
+      → Total Acc: -
       
 #### 5-2) 1 instance → 3 label (Multi-Label Learning)
 
-      - Target: Shape, Color1, Color2
+      1. All (Shape + Color1 + Color2)
       
-      - Model: Resnet18
+      Model: Resnet18
       
-      - Drop-out rate: 0.25
+      Drop-out rate: 0.25
      
-      - Aleatoric Uncertainty: -
+      Aleatoric Uncertainty: -
       
-      - Epistemic Uncertainty: -
+      Epistemic Uncertainty: -
 
-      - Acc: -
+      Validation Shape Acc: -
+      
+      Validation Color1 Acc: -
+      
+      Validation Color2 Acc: -
+      
+      → Total Acc: -    
 
 <br>
 
