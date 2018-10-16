@@ -60,7 +60,7 @@
       
       ______________________________________________
       
-      → Total Acc: 76.37% 
+      Total Acc: 76.37% 
       (Model was trained with 150 epochs)
       
       Loss Weight
@@ -115,7 +115,7 @@
       
       ______________________________________________     
       
-      → Total Acc: -
+      Total Acc: -
       
 <br>
       
@@ -139,7 +139,7 @@
       
       ______________________________________________
       
-      → Total Acc: -    
+      Total Acc: -    
       
       Loss Weight
       Shape : Front Color : Back Color = 1 : 1 : 1
