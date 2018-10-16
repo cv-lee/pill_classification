@@ -44,7 +44,11 @@ class Dataset(torch.utils.data.Dataset):
                                             scale=(0.5,1.5), shear=(-0.2,0.2)),
                     transforms.ColorJitter(saturation=0.1, brightness=0.2),
                     transforms.ToTensor()])
-        img_list = os.listdir(self.img_root)
+        file_list = os.listdir(self.img_root)
+        img_list = []
+        for i in range(len(file_list)):
+            if file_list[i].split('.')[-1] == 'jpg':
+                img_list.append(file_list[i])
         img_list = sorted(img_list, key=lambda x: int(os.path.splitext(x)[0]))
         for img_name in img_list:
             self.img_path += glob.glob(os.path.join(self.img_root, img_name))
@@ -76,4 +80,3 @@ class Dataset(torch.utils.data.Dataset):
         else:
             label = self.shape_list[idx], self.color1_list[idx], self.color2_list[idx]
         return img, label, self.img_path[idx]
-
