@@ -146,4 +146,8 @@
 
 
 
-### 2. Test.py (Testset+test)
+### 2. Mobile Wrapping + UI (Not decided yet)
+
+#### 2-1) Tensorflow Mobile Translation
+
+#### 2-2) UI Design
