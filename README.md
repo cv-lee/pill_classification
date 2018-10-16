@@ -27,19 +27,18 @@
 ![](https://i.imgur.com/yfpsIY4.png)
 
 <br>
-
-      (50 epoch train)
       
-      - Shape (11 Types)
+      1. Shape (11 Types)
       Validation Acc: 91.87%
 
-      - Front Color (16 Types)
+      2. Front Color (16 Types)
       Validation Acc: 90.23%
 
-      - Back Color (16 Types)
+      3. Back Color (16 Types)
       Validation Acc: 91.08%
    
-      → Total Acc: 75.50% 
+      → Total Acc: 75.50%       
+      (Each model was trained with 50 epochs)
       
       
 #### 4-2) 1 instance → 3 label (Multi-Label Learning)
@@ -50,16 +49,18 @@
 
       (150 epoch train)
       
-      - Shape (11 Types) 
+      1. Shape (11 Types) 
       Validation Acc: 91.55% 
 
-      - Front Color (16 Types) 
+      2. Front Color (16 Types) 
       Validation Acc: 91.70% 
 
-      - Back Color (16 Types)
+      3. Back Color (16 Types)
       Validation Acc: 90.97%
 
-      → Total Acc: 76.37% 
+      → Total Acc: 76.37%    
+      (Model was trained with 150 epochs)
+
 <br>
 
 ### 5. Uncertainty Model
