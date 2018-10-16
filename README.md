@@ -32,7 +32,7 @@
       Validation Acc: 91.87%
 
       2. Front Color (16 Types)
-      ;Validation Acc: 90.23%
+      Validation Acc: 90.23%
 
       3. Back Color (16 Types)
       Validation Acc: 91.08%
@@ -51,7 +51,7 @@
       Validation Acc: 91.55% 
 
       2. Front Color (16 Types) 
-      &nbsp;&nbsp;&nbsp;Validation Acc: 91.70% 
+      Validation Acc: 91.70% 
 
       3. Back Color (16 Types)
       Validation Acc: 90.97%
