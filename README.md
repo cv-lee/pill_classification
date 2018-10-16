@@ -16,7 +16,7 @@
 
       Model: Baisc ResNet18
       
-      Augmentation: Vertical, Horizontal Flip / Tilt / Scaling / Shear
+      Augmentation: Vertical Flip / Tilt / Scaling / Shear / Elastic Distortion
 
 ### 4. Classifier
 
