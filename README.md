@@ -110,7 +110,7 @@
       
       → Total Acc: -
       
-      <br>
+<br>
       
 #### 5-2) 1 instance → 3 label (Multi-Label Learning)
 
