@@ -79,7 +79,7 @@
       
       ______________________________________________
       
-      2. Color1
+      2. Front Color
       
       Model: Resnet18
       
@@ -94,7 +94,7 @@
       ______________________________________________
             
             
-      3. Color2
+      3. Back Color
       
       Model: Resnet18
       
@@ -112,7 +112,7 @@
       
 #### 5-2) 1 instance → 3 label (Multi-Label Learning)
 
-      1. All (Shape + Color1 + Color2)
+      1. All (Shape + Front Color + Back Color)
       
       Model: Resnet18
       
