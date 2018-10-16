@@ -36,11 +36,13 @@
 
       3. Back Color (16 Types)
       Validation Acc: 91.08%
+
+      ______________________________________________
    
-      → Total Acc: 75.50%       
+      Total Acc: 75.50%       
       (Each model was trained with 50 epochs)
       
-      
+
 #### 4-2) 1 instance → 3 labels (Multi-Label Learning)
 
 ![](https://i.imgur.com/D9EF3iC.png)
@@ -55,10 +57,15 @@
 
       3. Back Color (16 Types)
       Validation Acc: 90.97%
-
-      → Total Acc: 76.37%    
+      
+      ______________________________________________
+      
+      → Total Acc: 76.37% 
       (Model was trained with 150 epochs)
-
+      
+      Loss Weight
+      Shape : Front Color : Back Color = 1 : 1 : 1
+      
 <br>
 
 ### 5. Uncertainty Model
@@ -133,7 +140,10 @@
       ______________________________________________
       
       → Total Acc: -    
-
+      
+      Loss Weight
+      Shape : Front Color : Back Color = 1 : 1 : 1
+      
 <br>
 
 ## TODO 
