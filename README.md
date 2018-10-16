@@ -41,7 +41,7 @@
       (Each model was trained with 50 epochs)
       
       
-#### 4-2) 1 instance → 3 label (Multi-Label Learning)
+#### 4-2) 1 instance → 3 labels (Multi-Label Learning)
 
 ![](https://i.imgur.com/D9EF3iC.png)
 
@@ -112,7 +112,7 @@
       
 <br>
       
-#### 5-2) 1 instance → 3 label (Multi-Label Learning)
+#### 5-2) 1 instance → 3 labels (Multi-Label Learning)
 
       1. All (Shape + Front Color + Back Color)
       
