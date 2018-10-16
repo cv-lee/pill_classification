@@ -29,13 +29,13 @@
 <br>
       
       1. Shape (11 Types)
-      &nbsp;&nbsp;&nbsp;Validation Acc: 91.87%
+      Validation Acc: 91.87%
 
       2. Front Color (16 Types)
-      &nbsp;&nbsp;&nbsp;Validation Acc: 90.23%
+      ;Validation Acc: 90.23%
 
       3. Back Color (16 Types)
-      &nbsp;&nbsp;&nbsp;Validation Acc: 91.08%
+      Validation Acc: 91.08%
    
       → Total Acc: 75.50%       
       (Each model was trained with 50 epochs)
@@ -48,13 +48,13 @@
 <br>
 
       1. Shape (11 Types) 
-      &nbsp;&nbsp;&nbsp;Validation Acc: 91.55% 
+      Validation Acc: 91.55% 
 
       2. Front Color (16 Types) 
       &nbsp;&nbsp;&nbsp;Validation Acc: 91.70% 
 
       3. Back Color (16 Types)
-      &nbsp;&nbsp;&nbsp;Validation Acc: 90.97%
+      Validation Acc: 90.97%
 
       → Total Acc: 76.37%    
       (Model was trained with 150 epochs)
