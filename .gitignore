@@ -1,0 +1,7 @@
+/__pycache__
+/mask
+/checkpoint/*.tar
+/models/__pycache
+/data/image/*.jpg
+/data/label/*.xls
+/data/label/*.ods
