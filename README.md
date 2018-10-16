@@ -146,7 +146,7 @@
 
 
 
-### 2. Mobile Wrapping + UI (Not decided yet)
+### 2. Mobile App (Not decided yet)
 
 #### 2-1) Tensorflow Mobile Translation
 
