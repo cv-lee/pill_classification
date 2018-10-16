@@ -106,6 +106,8 @@
 
       Validation Acc: -
       
+      ______________________________________________     
+      
       → Total Acc: -
       
       <br>
@@ -127,6 +129,8 @@
       Validation Color1 Acc: -
       
       Validation Color2 Acc: -
+      
+      ______________________________________________
       
       → Total Acc: -    
 
