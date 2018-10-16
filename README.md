@@ -64,12 +64,13 @@
 
 ### 5. Uncertainty Model
 
+#### 5-1) 1 instance → 1 label
 
+      - Target: Shape
+      
       - Model: Resnet18
       
       - Drop-out rate: 0.25
-      
-      - Target: Shape (1 instance - 1 label Model)
       
       - Aleatoric Uncertainty: 0.0085
       
@@ -77,6 +78,22 @@
 
       - Acc: 86.63% (8 epoch Train)
       
+      
+      
+#### 5-2) 1 instance → 3 label (Multi-Label Learning)
+
+      - Target: Shape, Color1, Color2
+      
+      - Model: Resnet18
+      
+      - Drop-out rate: 0.25
+     
+      - Aleatoric Uncertainty: -
+      
+      - Epistemic Uncertainty: -
+
+      - Acc: -
+
 <br>
 
 ## TODO 
