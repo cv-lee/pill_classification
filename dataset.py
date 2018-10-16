@@ -14,7 +14,7 @@ from config import *
 def data_loader(args, mode='TRAIN'):
     if mode == 'TRAIN':
         shuffle = True
-    elif mode =='VALID':
+    elif mode =='VALID' or mode=='TEST':
         shuffle = False
     else:
         raise ValueError('data_loader flag ERROR')
@@ -40,9 +40,9 @@ class Dataset(torch.utils.data.Dataset):
         self.color2_list = []
         self.transform = transforms.Compose([
                     transforms.RandomVerticalFlip(),
-                    transforms.RandomHorizontalFlip(),
-                    transforms.RandomAffine(degrees=(-20,20),translate=(0.1,0.1),
-                                            scale=(0.9,1.1), shear=(-0.2,0.2)),
+                    transforms.RandomAffine(degrees=(-25,25),translate=(0.1,0.1),
+                                            scale=(0.5,1.5), shear=(-0.2,0.2)),
+                    transforms.ColorJitter(saturation=0.1, brightness=0.2),
                     transforms.ToTensor()])
         img_list = os.listdir(self.img_root)
         img_list = sorted(img_list, key=lambda x: int(os.path.splitext(x)[0]))
@@ -65,6 +65,8 @@ class Dataset(torch.utils.data.Dataset):
         img = Image.open(self.img_path[idx])
         if self.mode == 'TRAIN':
             img = self.transform(img)
+        else:
+            img = transforms.ToTensor()(img)
         if self.data == 'shape':
             label = self.shape_list[idx]
         elif self.data == 'color1':

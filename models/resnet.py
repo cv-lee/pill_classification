@@ -97,7 +97,6 @@ class ResNet(nn.Module):
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = nn.BatchNorm2d(64)
-        self.dropout0 = nn.Dropout2d(p=self.drop_rate)
         self.relu = nn.ReLU(inplace=True)
         self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         self.layer1 = self._make_layer(block, 64, layers[0], stride=2, drop_rate=self.drop_rate)
@@ -107,14 +106,10 @@ class ResNet(nn.Module):
         self.avgpool = nn.AvgPool2d(8, stride=8)
         if type(self.num_classes) == tuple:
             self.fc1 = nn.Linear(512*2*block.expansion, num_classes[0])
-            self.dropout1 = nn.Dropout(p=self.drop_rate)
             self.fc2 = nn.Linear(512*2*block.expansion, num_classes[1])
-            self.dropout2 = nn.Dropout(p=self.drop_rate)
             self.fc3 = nn.Linear(512*2*block.expansion, num_classes[2])
-            self.dropout3 = nn.Dropout(p=self.drop_rate)
         else:
             self.fc = nn.Linear(512*2*block.expansion, num_classes)
-            self.dropout4 = nn. Dropout(p=self.drop_rate)
         self.softmax = nn.Softmax(dim=1)
 
         for m in self.modules():
@@ -145,7 +140,6 @@ class ResNet(nn.Module):
     def forward(self, x):
         x = self.conv1(x)
         x = self.bn1(x)
-        x = self.dropout0(x)
         x = self.relu(x)
         x = self.maxpool(x)
 
@@ -157,18 +151,14 @@ class ResNet(nn.Module):
         x = x.view(x.size(0), -1)
         if type(self.num_classes) == tuple:
             x1 = self.fc1(x)
-            x1 = self.dropout1(x)
             x2 = self.fc2(x)
-            x2 = self.dropout2(x)
             x3 = self.fc3(x)
-            x3 = self.dropout3(x)
             x1 = self.softmax(x1)
             x2 = self.softmax(x2)
             x3 = self.softmax(x3)
             return x1, x2, x3
         else:
             x = self.fc(x)
-            x = self.dropout4(x)
             x = self.softmax(x)
             return x
 
@@ -228,8 +218,13 @@ def resnet152(pretrained=False, **kwargs):
     return model
 
 def test():
-        net = resnet18(num_classes=11, drop_rate=0.3)
-        y = net(torch.randn(12,3,512,1024))
+        # Single Label Model
+        #net = resnet18(num_classes=11, drop_rate=0)
+        # Multi Label Model
+        net = resnet18(num_classes=(11,18,18), drop_rate=0)
+        x = torch.randn(12,3,512,1024)
+        y = net(x)
+        pdb.set_trace()
         print(y.size())
 
 #test()

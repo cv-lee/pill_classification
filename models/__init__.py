@@ -5,7 +5,8 @@ import torch
 from torch.optim import Adam
 
 from .resnet import *
-
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+from utils import *
 
 def load_model(args, mode):
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -20,12 +21,14 @@ def load_model(args, mode):
     model = resnet18(num_classes=class_num, drop_rate=args.drop_rate)
     if mode == 'TRAIN':
         optimizer = Adam(model.parameters(), lr=args.lr)
-    elif mode == 'TEST':
+        resume = args.resume
+    elif mode == 'TEST' or mode=='VALID':
         optimizer = None
+        resume = True
     else:
         raise ValueError('InValid Flag in load_model')
 
-    if args.resume:
+    if resume:
         checkpoint = Checkpoint(model, optimizer)
         checkpoint.load(args.ckpt_path)
         best_loss = checkpoint.best_loss
@@ -39,3 +42,4 @@ def load_model(args, mode):
         model = torch.nn.DataParallel(model)
         torch.backends.cudnn.benchmark=True
     return model, optimizer, best_loss, start_epoch
+

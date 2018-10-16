@@ -22,14 +22,13 @@ def train(args):
     validloader = data_loader(args, mode='VALID')
 
     # Model Load
-    resnet, optimizer, best_loss, start_epoch =\
-        load_model(args, mode='TRAIN')
+    net, optimizer, best_loss, start_epoch = load_model(args, mode='TRAIN')
 
     # Loss Init
     for epoch in range(start_epoch, args.epochs + 1):
         # Train Model
         print('Epoch: {}\n  >> Train'.format(epoch))
-        resnet.train(True)
+        net.train(True)
         torch.set_grad_enabled(True)
         loss = [0, 0, 0, 0] # shape,color1,color2,total
         acc = [0, 0, 0, 0] # shape,color1,color2,total
@@ -41,7 +40,7 @@ def train(args):
             if type(label) == list:
                 img, shape, color1, color2 = img.to(device), label[0].to(device),\
                                              label[1].to(device), label[2].to(device)
-                output = resnet(img)
+                output = net(img)
                 shape_loss = F.cross_entropy(output[0], shape)
                 color1_loss = F.cross_entropy(output[1], color1)
                 color2_loss = F.cross_entropy(output[2], color2)
@@ -75,7 +74,7 @@ def train(args):
                             acc[0]/(idx+1), acc[1]/(idx+1), acc[2]/(idx+1), acc[3]/(idx+1)))
             else:
                 img, label = img.to(device), label.to(device)
-                output = resnet(img)
+                output = net(img)
                 batch_loss = F.cross_entropy(output, label)
                 optimizer.zero_grad()
                 batch_loss.backward()
@@ -89,7 +88,14 @@ def train(args):
                              %((loss[3]/(idx+1)), acc[3]/(idx+1)))
 
         print('\n\n  >>Validation')
-        resnet.eval()
+        net.eval()
+        for module in net.module.modules():
+            if isinstance(module, torch.nn.modules.Dropout2d):
+                module.train(True)
+            elif isinstance(module, torch.nn.modules.Dropout):
+                module.train(True)
+            else:
+                pass
         torch.set_grad_enabled(False)
         loss = [0, 0, 0, 0] # shape,color1,color2,total
         acc = [0, 0, 0, 0] # shape,color1,color2,total
@@ -98,7 +104,7 @@ def train(args):
             if type(label) == list:
                 img, shape, color1, color2 = img.to(device), label[0].to(device),\
                                              label[1].to(device), label[2].to(device)
-                output = resnet(img)
+                output = net(img)
                 shape_loss = F.cross_entropy(output[0], shape)
                 color1_loss = F.cross_entropy(output[1], color1)
                 color2_loss = F.cross_entropy(output[2], color2)
@@ -129,7 +135,8 @@ def train(args):
                             acc[0]/(idx+1), acc[1]/(idx+1), acc[2]/(idx+1), acc[3]/(idx+1)))
             else:
                 img, label = img.to(device), label.to(device)
-                output = resnet(img)
+                output = net(img)
+                batch_loss = F.cross_entropy(output, label)
                 output = (output.cpu().detach().numpy()).argmax(axis=1)
                 label = label.cpu().detach().numpy()
                 correct = (output==label).astype(np.int).sum()
@@ -140,23 +147,23 @@ def train(args):
 
         total_loss = loss[3]/(idx+1)
         if total_loss < best_loss:
-            checkpoint = Checkpoint(resnet, optimizer, epoch, total_loss)
+            checkpoint = Checkpoint(net, optimizer, epoch, total_loss)
             checkpoint.save(args.ckpt_path)
             best_loss = total_loss
-            print("Saving...")
+            print("\nSaving...")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--resume", type=bool, default=False,
                         help="Model Trianing resume.")
-    parser.add_argument("--data", type=str, default="shape",
+    parser.add_argument("--data", type=str, default="all",
                         help="data to train(shape, color1, color2, all)")
-    parser.add_argument("--batch_size", type=int, default=20,
+    parser.add_argument("--batch_size", type=int, default=40,
                         help="The batch size to load the data")
     parser.add_argument("--epochs", type=int, default=150,
                         help="The training epochs to run.")
-    parser.add_argument("--drop_rate", type=float, default=0.25,
+    parser.add_argument("--drop_rate", type=float, default=0.1,
                         help="Drop-out rate for uncertainty model")
     parser.add_argument("--lr", type=float, default=0.0001,
                         help="Learning rate to use in training")
@@ -164,7 +171,7 @@ if __name__ == "__main__":
                         help="The directory containing the training image dataset.")
     parser.add_argument("--label_path", type=str, default="./data/label/label.xls",
                         help="The directory containing the training label datgaset")
-    parser.add_argument("--ckpt_path", type=str, default="./checkpoint/unet.tar",
+    parser.add_argument("--ckpt_path", type=str, default="./checkpoint/resnet.tar",
                         help="The directory containing the training label datgaset")
     args = parser.parse_args()
 

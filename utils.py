@@ -178,3 +178,4 @@ class Checkpoint:
                     "epoch": self.epoch,
                     "best_loss": self.best_loss}, path)
 
+
