@@ -77,6 +77,8 @@
 
       Validation Acc: 86.63% (8 epoch Train)
       
+      ______________________________________________
+      
       2. Color1
       
       Model: Resnet18
@@ -89,6 +91,9 @@
 
       Validation Acc: -
       
+      ______________________________________________
+            
+            
       3. Color2
       
       Model: Resnet18
@@ -102,6 +107,8 @@
       Validation Acc: -
       
       → Total Acc: -
+      
+      <br>
       
 #### 5-2) 1 instance → 3 label (Multi-Label Learning)
 
