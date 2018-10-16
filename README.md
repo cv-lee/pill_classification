@@ -77,7 +77,7 @@
       
       Model: Resnet18
       
-      Drop-out rate: 0.25
+      Drop-out rate: 0.1
       
       Aleatoric Uncertainty: 0.0085
       
@@ -91,7 +91,7 @@
       
       Model: Resnet18
       
-      Drop-out rate: 0.25
+      Drop-out rate: 0.1
       
       Aleatoric Uncertainty: -
       
@@ -105,7 +105,7 @@
       
       Model: Resnet18
       
-      Drop-out rate: 0.25
+      Drop-out rate: 0.1
       
       Aleatoric Uncertainty: -
       
@@ -125,7 +125,7 @@
       
       Model: Resnet18
       
-      Drop-out rate: 0.25
+      Drop-out rate: 0.1
      
       Aleatoric Uncertainty: -
       
