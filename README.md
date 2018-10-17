@@ -131,15 +131,15 @@
       
       Epistemic Uncertainty: -
 
-      Validation Shape Acc: -
+      Validation Shape Acc: 88.09%
       
-      Validation Color1 Acc: -
+      Validation Color1 Acc: 84.08%
       
-      Validation Color2 Acc: -
+      Validation Color2 Acc: 85.16%
       
       ________________________________________________________________________________________________________________
       
-      Total Acc: -    
+      Total Acc: 63.32%    
       
       Loss Weight
       Shape : Front Color : Back Color = 1 : 1 : 1
