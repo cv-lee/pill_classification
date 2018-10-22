@@ -7,7 +7,7 @@
       Link: http://drug.mfds.go.kr/html/index.jsp#
 
 ### 2. Data preprocess (except Pill Mask)
-
+ 
       Image Crop/Resizing ( Final Image Size: 1024 × 512 × 3 )
 
       Label Naming
