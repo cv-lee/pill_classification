@@ -6,7 +6,7 @@ shape_loss_weight = 1.0
 color1_loss_weight = 1.0
 color2_loss_weight = 1.0
 
-
+ 
 # SHAPE INIT
 s0= '삼각형'
 s1 = '사각형'
